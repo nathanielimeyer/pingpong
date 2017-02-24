@@ -1,29 +1,49 @@
-# _Project name_
+# _Ping Pong_
 
-#### _Short project description_
+#### _Counts from 1 to a user supplied input but replaces certain numbers with strings_
 
 #### By _**Nathaniel Meyer**_
 
 ## Description
 
-_Longer project description_
+_This project uses a webform to gather a numeric input from the user. Then it counts from 1 to that number with the following exceptions:_
 
-_Project specifications / BDD_
+* Numbers divisible by 3 are replaced with "ping"
+* Numbers divisible by 5 are replaced with "pong"
+* Numbers divisible by 15 are replaced with "ping-pong"
 
-|Requirement|input|output|
+_The user should be able to use the feature over and over without reloading._
+
+## _Project Specifications_
+
+|Business Logic Requirements|input|output|
 |-----------|:---:|:----:|
-|something|egg|chicken|
+|Given a number, count from 1 to that number|6|1,2,3,4,5,6|
+|Check whether each number in the count is divisible by 3|1,2,3,4,5,6|false, false, true, false, false, true|
+|If the number is divisible by three, return ping instead of the number|1,2,3,4,5,6|1,2,ping,4,5,ping|
+|Check whether each number in the count is divisible by 5|1,2,3,4,5,6|false, false, false, false, true, false|
+|If the number is divisible by 5, return pong instead of the number|1,2,3,4,5,6|1,2,ping,4,pong,ping|
+|Check whether each number in the count is divisible by 15|...15,16,17,18,19,20...|...true,false,false,false,false,false...|
+|If the number is divisible by 15 return "ping-pong" instead of the number|...15,16,17,18,19,20...|...ping-pong,16,17,ping,19,pong...|
+|If the input is not a number or there is no input, nag for a number|""|Please enter a number.|
+
+|UI Requirements|input|output|
+|-----------|:---:|:----:|
+|Prompt for input|||
+|Populate output|||
+|Require numerical input|||
+|Clear output on resubmission|||
 
 
 ## Setup/Installation Requirements
 
-* _In any folder with git installed, run "git clone https://github.com/nathanielimeyer/foo/"._
-* _cd ./foo_
+* _In any folder with git installed, run "git clone https://github.com/nathanielimeyer/pingpong"._
+* _cd ./pingpong_
 * _Open index.html (with any modern web browser.)_
 
 ## Known Bugs
 
-_List known bugs here_
+_As of this check-in, no features have been implemented except for a simple echo._
 
 ## Support and contact details
 
