@@ -30,7 +30,9 @@ $(function() {
       $("#errorFeedback").hide();
       talkBack = echoFunction(inputNumber);
       $(".response").show();
-      $("#echoInput").append("<li>" + talkBack + "</li>");
+      talkBack.forEach(function(element){
+        $("#echoInput").append("<li>" + element + "</li>");        
+      });
     }
     echoInput = "";
   });
