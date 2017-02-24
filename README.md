@@ -25,14 +25,16 @@ _The user should be able to use the feature over and over without reloading._
 |If the number is divisible by 5, return pong instead of the number|1,2,3,4,5,6|1,2,ping,4,pong,ping|
 |Check whether each number in the count is divisible by 15|...15,16,17,18,19,20...|...true,false,false,false,false,false...|
 |If the number is divisible by 15 return "ping-pong" instead of the number|...15,16,17,18,19,20...|...ping-pong,16,17,ping,19,pong...|
-|If the input is not a number or there is no input, nag for a number|""|Please enter a number.|
+|Support negative numbers|-7|1,ping-pong,-1,-2,ping,-4,pong,ping,-7|
 
 |UI Requirements|input|output|
 |-----------|:---:|:----:|
 |Prompt for input|||
 |Populate output|||
 |Require numerical input|||
+|If the input is not a number or there is no input, nag for a number|""|Please enter a number.|
 |Clear output on resubmission|||
+|Get some cool effects to fire when the element is not a number|||
 
 
 ## Setup/Installation Requirements
