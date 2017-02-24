@@ -1,15 +1,43 @@
+* {
+  font-family: terminal, monospace;
+  font-size: 50px;
+  color: #fff;
+}
+
+input {
+  background-color: inherit;
+}
+
 .response, #errorFeedback {
   display: none;
 }
 
+body {
+  background-size: 100%;
+  background-image: url("../img/initialBackground.gif");
+}
+
+li {
+  list-style: none;
+}
+
+.btn {
+  background-color: inherit;
+  font-size: 50px;
+}
+
+.number {
+  background-image: url("../img/number.jpg");
+}
+
 .ping-pong {
-  background-color: green;
+  background-image: url("../img/ping-pong.jpg");
 }
 
 .ping {
-  background-color: yellow;
+  background-image: url("../img/ping.jpg");
 }
 
 .pong {
-  background-color: red;
+  background-image: url("../img/pong.jpg");
 }

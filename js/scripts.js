@@ -1,7 +1,7 @@
 // Business logic
 var talkBack = [];
 
-var echoFunction = function(number) {
+var signChecker = function(number) {
   talkBack = [];
   if (number >= 1) {
     for (i = 1; i <= number; i++) {
@@ -29,17 +29,6 @@ var talkBackPusher = function(number) {
   }
 };
 
-var outputFunction = function(element) {
-  if (typeof(element) === 'number') {
-    console.log("This is a number!");
-  }
-  else {
-    $("body").removeClass();
-    $("body").addClass(element);
-  }
-  $("#echoInput").append("<li>" + element + "</li>");
-};
-
 // Front end logic
 $(function() {
   $("form#inputForm").submit(function(event){
@@ -50,12 +39,22 @@ $(function() {
       $("#errorFeedback").show();
     } else {
       $("#errorFeedback").hide();
-      talkBack = echoFunction(inputNumber);
+      talkBack = signChecker(inputNumber);
       $(".response").show();
       talkBack.forEach(function(element){
         outputFunction(element);
       });
     }
-    echoInput = "";
   });
 });
+
+var outputFunction = function(element) {
+  $("body").removeClass();
+  if (typeof(element) === 'number') {
+    $("body").addClass("number");
+  }
+  else {
+    $("body").addClass(element);
+  }
+  $("#echoInput").append("<li>" + element + "</li>");
+};
