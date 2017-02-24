@@ -3,7 +3,11 @@ var talkBack = [];
 
 var echoFunction = function(number) {
   for (i = 1; i <= number; i++) {
-    talkBack.push(i);
+    if (i % 3 === 0) {
+      talkBack.push("ping");
+    } else {
+      talkBack.push(i);      
+    }
   };
   return talkBack;
 };
