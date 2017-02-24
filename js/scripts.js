@@ -3,9 +3,15 @@ var talkBack = [];
 
 var echoFunction = function(number) {
   talkBack = [];
-  for (i = 1; i <= number; i++) {
-    talkBackPusher(i);
-  };
+  if (number >= 1) {
+    for (i = 1; i <= number; i++) {
+      talkBackPusher(i);
+    };
+  } else {
+    for (i = 1; i >= number; i--) {
+      talkBackPusher(i);
+    };
+  }
   return talkBack;
 };
 
