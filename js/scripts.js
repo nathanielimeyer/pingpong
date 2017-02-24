@@ -1,20 +1,25 @@
 // Business logic
-var echoFunction = function(string) {
-  return string;
+var talkBack = [];
+
+var echoFunction = function(number) {
+  for (i = 1; i <= number; i++) {
+    talkBack.push(i);
+  };
+  return talkBack;
 };
 
 // Front end logic
 $(function() {
   $("form#inputForm").submit(function(event){
     event.preventDefault();
-    userString = $("input#userInput").val();
-    if (!userString) {
+    inputNumber = $("input#userInput").val();
+    if (!inputNumber) {
       $("#errorFeedback").show();
     } else {
       $("#errorFeedback").hide();
-      output = echoFunction(userString);
+      talkBack = echoFunction(inputNumber);
       $(".response").show();
-      $("#echoInput").text(output);
+      $("#echoInput").append("<li>" + talkBack + "</li>");
     }
     echoInput = "";
   });
