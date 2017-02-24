@@ -2,11 +2,15 @@
 var talkBack = [];
 
 var echoFunction = function(number) {
+  talkBack = [];
   for (i = 1; i <= number; i++) {
-    if (i % 3 === 0) {
+    if (i % 5 === 0) {
+      talkBack.push("pong");
+    }
+    else if (i % 3 === 0) {
       talkBack.push("ping");
     } else {
-      talkBack.push(i);      
+      talkBack.push(i);
     }
   };
   return talkBack;
