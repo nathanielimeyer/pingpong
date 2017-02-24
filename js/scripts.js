@@ -23,6 +23,7 @@ var echoFunction = function(number) {
 $(function() {
   $("form#inputForm").submit(function(event){
     event.preventDefault();
+    $("#echoInput").text("");
     inputNumber = $("input#userInput").val();
     if (!inputNumber) {
       $("#errorFeedback").show();
@@ -31,7 +32,7 @@ $(function() {
       talkBack = echoFunction(inputNumber);
       $(".response").show();
       talkBack.forEach(function(element){
-        $("#echoInput").append("<li>" + element + "</li>");        
+        $("#echoInput").append("<li>" + element + "</li>");
       });
     }
     echoInput = "";
