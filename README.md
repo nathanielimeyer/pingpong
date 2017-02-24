@@ -36,7 +36,6 @@ _The user should be able to use the feature over and over without reloading._
 |Clear output on resubmission|||
 |Get some cool effects to fire when the element is not a number|||
 
-
 ## Setup/Installation Requirements
 
 * _In any folder with git installed, run "git clone https://github.com/nathanielimeyer/pingpong"._
@@ -45,7 +44,7 @@ _The user should be able to use the feature over and over without reloading._
 
 ## Known Bugs
 
-_As of this check-in, no features have been implemented except for a simple echo._
+_My cool effects don't fire off with each element. They wait until the forEach finishes and then only the last effect occurs._
 
 ## Support and contact details
 

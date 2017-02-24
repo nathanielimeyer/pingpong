@@ -1,3 +1,15 @@
 .response, #errorFeedback {
   display: none;
 }
+
+.ping-pong {
+  background-color: green;
+}
+
+.ping {
+  background-color: yellow;
+}
+
+.pong {
+  background-color: red;
+}

@@ -29,6 +29,17 @@ var talkBackPusher = function(number) {
   }
 };
 
+var outputFunction = function(element) {
+  if (typeof(element) === 'number') {
+    console.log("This is a number!");
+  }
+  else {
+    $("body").removeClass();
+    $("body").addClass(element);
+  }
+  $("#echoInput").append("<li>" + element + "</li>");
+};
+
 // Front end logic
 $(function() {
   $("form#inputForm").submit(function(event){
@@ -42,7 +53,7 @@ $(function() {
       talkBack = echoFunction(inputNumber);
       $(".response").show();
       talkBack.forEach(function(element){
-        $("#echoInput").append("<li>" + element + "</li>");
+        outputFunction(element);
       });
     }
     echoInput = "";
