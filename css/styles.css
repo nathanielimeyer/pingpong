@@ -26,18 +26,43 @@ li {
   font-size: 50px;
 }
 
-.number {
+body.number {
   background-image: url("../img/number.jpg");
 }
 
-.ping-pong {
+body.PING-PONG {
   background-image: url("../img/ping-pong.jpg");
 }
 
-.ping {
+body.ping {
   background-image: url("../img/ping.jpg");
 }
 
-.pong {
+body.pong {
   background-image: url("../img/pong.jpg");
+}
+
+li.number {
+  color: yellow;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+li.PING-PONG {
+  color: red;
+  font-size: 50px;
+  font-weight: 600;
+
+}
+
+li.ping {
+  color: blue;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+li.pong {
+  color: green;
+  font-size: 40 px;
+  font-weight: 400;
 }

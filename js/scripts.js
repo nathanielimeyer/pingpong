@@ -17,7 +17,7 @@ var signChecker = function(number) {
 
 var talkBackPusher = function(number) {
   if (i % 15 === 0) {
-    talkBack.push("ping-pong");
+    talkBack.push("PING-PONG");
   }
   else if (i % 5 === 0) {
     talkBack.push("pong");
@@ -52,9 +52,10 @@ var outputFunction = function(element) {
   $("body").removeClass();
   if (typeof(element) === 'number') {
     $("body").addClass("number");
+    $("#echoInput").append("<li class=\"number\">" + element + "</li>");
   }
   else {
     $("body").addClass(element);
+    $("#echoInput").append("<li class=\"" + element + "\" >" + element + "</li>");
   }
-  $("#echoInput").append("<li>" + element + "</li>");
 };
