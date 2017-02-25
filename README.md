@@ -44,7 +44,7 @@ _The user should be able to use the feature over and over without reloading._
 
 ## Known Bugs
 
-_My cool effects don't fire off with each element. They wait until the forEach finishes and then only the last effect occurs._
+_I spent a great deal of time trying to delay the appending of my li elements and cycle through my custom backgrounds as the output posted to the screen. I'm pretty frustrated with it - I spent most of the day looking for the answer. I have to be content with some custom styles on my li elements and changing the background image at the very end._
 
 ## Support and contact details
 
